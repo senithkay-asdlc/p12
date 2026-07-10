@@ -1,0 +1,12 @@
+{
+  "name": "hello-api",
+  "type": "service",
+  "version": "0.1.0",
+  "language": "Go",
+  "buildpack": "docker",
+  "appPath": "hello-api",
+  "entrypoint": "deployment/service",
+  "exposure": "internet",
+  "dependencies": [],
+  "description": "Minimal Go HTTP service that returns a friendly greeting via GET /hello (optionally personalized with a `name` query parameter) and exposes GET /health for platform liveness checks. No authentication, no persistence, and no dependencies on other components or external systems."
+}
